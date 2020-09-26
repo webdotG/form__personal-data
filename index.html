@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>personal data</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="data-wrapper">
+    <form action="https://........." method="post">
+        <fieldset>
+            <legend>Data</legend>
+            <label for="passport">Passport number</label>
+            <input id="passport" type="text" name="passport" pattern="[0-9]{3}-[0-9]{5}" placeholder="Формат номера XXX-XXXXX" required> <!-- Паттерны значений полей -->
+            <label for="tel">Phone number</label>
+            <input id="tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Формат номера X-XXX-XXX" required> <!-- Паттерны значений полей -->
+            <div class="half-width">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required> <!-- Поле ввода электронной почты -->
+            </div>
+            <div class="half-width">
+                <label for="url">Личный сайт</label>
+                <input id="url" type="url" name="url" required> <!-- Поле ввода адреса сайта -->
+            </div>
+            <div class="one-third-width">
+                <label for="color">Favorite color</label>
+                <input id="color" type="color" name="color"> <!-- Поле ввода цвета -->
+            </div>
+            <div class="two-third-width">
+                <label for="food">Favorite spend time</label>
+                <select id="food" name="food" multiple>
+                    <optgroup label="modified sense">
+                        <option value="sex">sex</option>
+                        <option value="walk">walk</option>
+                        <option value="read">read</option>
+                        <option value="eat">eat</option>
+                        <option value="think">think</option>
+                    </optgroup>
+                    <optgroup label="after modified">
+                        <option value="depression">depression</option>
+                        <option value="cry">cry</option>
+                        <option value="want die">want die</option>
+                        <option value="repeat modified">repeat modified</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+        <div class="buttons">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</div>
+</body>
+</html>
